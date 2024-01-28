@@ -1,8 +1,8 @@
 import React from 'react';
 // import packageImage from '../assests/packageBg.jpeg'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook,  faInstagram, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faFacebook,  faInstagram, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const StickyNavbar = () => {
     return (
@@ -21,18 +21,8 @@ const StickyNavbar = () => {
                 </div>
 
                 <div className='md:flex items-center hidden'>
-                    {/* Add your social media icons here */}
-                    <a href="https://www.facebook.com/makeajodi" target="_blank" rel="noopener noreferrer" className='text-xl mr-4 p-2 cursor-pointer'>
-                        <FontAwesomeIcon icon={faFacebook} />
-                    </a>
-                    <a href="https://www.instagram.com/makeajodi/" target="_blank" rel="noopener noreferrer" className='text-xl mr-4 p-2 cursor-pointer'>
-                        <FontAwesomeIcon icon={faInstagram} />
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" className='text-xl mr-4 p-2 cursor-pointer'>
-                        <FontAwesomeIcon icon={faYoutube} />
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" className='text-xl mr-4 p-2 cursor-pointer'>
-                        <FontAwesomeIcon icon={faLinkedin} />
+                    <a href='mailto:info@makeajodi.com' className='cursor-pointer'>
+                        <p>info@makeajodi.com</p>
                     </a>
                 </div>
             </div>
@@ -41,3 +31,4 @@ const StickyNavbar = () => {
 }
 
 export default StickyNavbar;
+

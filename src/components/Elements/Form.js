@@ -81,6 +81,8 @@ const Form = () => {
                                     <option value='single'>Single</option>
                                     <option value='widow'>Widow</option>
                                     <option value='divorced'>Divorced</option>
+                                    <option value='awaiting-divorced'>Awaiting Divorced</option>
+                                    <option value='annulled'>Annulled</option>
                                 </select>
                             </div>
                         </div>

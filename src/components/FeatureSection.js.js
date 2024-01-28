@@ -9,13 +9,13 @@ const FeatureSection = () => {
           Personalized Matchmaking Service
         </h2>
         {/* Conditionally render the image for medium and larger screens */}
-        {window.innerWidth >= 768 && (
+        
           <img
             src={consult}
             alt='Features'
-            className='mx-auto mb-8 md:mb-12 lg:mb-16 h-auto md:h-[25rem] lg:h-[30rem]'
+            className='mx-auto mb-8 md:mb-12 lg:mb-16 h-auto md:h-[25rem] lg:h-[30rem] p-2'
           />
-        )}
+        
       </div>
       <div className='container mx-auto flex flex-wrap justify-around'>
         <div className='w-full md:w-1/2 lg:w-1/3 p-4 flex items-stretch'>

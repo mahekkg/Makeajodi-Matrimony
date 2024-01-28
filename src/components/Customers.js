@@ -41,7 +41,12 @@ const Customers = () => {
         </li>
         {/* Add more timeline items as needed */}
       </ul>
-
+      <button
+        type='button'
+        className='flex justify-center cursor-none m-auto text-[#FFFFFF] bg-[#A20405] px-2 py-2 mt-5 mb-14 rounded'
+      >
+        Many More
+      </button>
     </div>
   );
 };

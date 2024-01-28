@@ -233,7 +233,16 @@ ul.timeline li .descr::before {
     border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
   }
 }
+@media (max-width: 40rem) {
+  ul.timeline::before {
+    display: none; /* Hide the line on smaller screens */
+   
+  }
+  ul.timeline {
+    --col-gap: -1.3rem;
+  }
 
+}
 .credits {
   margin-top: 1rem;
   text-align: right;
@@ -290,4 +299,7 @@ ul.timeline li .descr::before {
     width: 300px
   }
 }
+
+/* -------------------------------------- */
+
 

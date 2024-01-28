@@ -34,6 +34,7 @@ const Footer = () => {
 
         {/* Social Media Icons Section */}
         <div className="md:flex items-center">
+        
           <a href="https://www.facebook.com/makeajodi" target="_blank" rel="noopener noreferrer" className='text-xl mr-4 p-2 cursor-pointer'>
             <FontAwesomeIcon icon={faFacebook} />
           </a>
