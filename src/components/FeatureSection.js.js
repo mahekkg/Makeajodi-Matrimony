@@ -13,7 +13,7 @@ const FeatureSection = () => {
           <img
             src={consult}
             alt='Features'
-            className='mx-auto mb-8 md:mb-12 lg:mb-16 h-auto md:h-[25rem] lg:h-[30rem] p-2'
+            className='mx-auto mb-8 md:mb-12 lg:mb-16 h-auto md:h-[25rem] lg:h-[30rem] p-2 rounded-3xl'
           />
         
       </div>

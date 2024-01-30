@@ -53,9 +53,9 @@ const Carousel = () => {
             <img
               src={slide.imageUrl}
               alt={`Slide ${index + 1}`}
-              className="w-full h-96 object-cover"
+              className="w-full h-96 object-cover rounded-2xl"
             />
-            <div className="absolute bottom-0 left-0 text-center text-white p-4 w-full gradient-overlay title">
+            <div className="absolute bottom-0 left-0 text-center text-white p-4 w-full gradient-overlay title rounded-b-lg  ">
               {/* <h1 className="text-2xl font-semibold">{slide.title}</h1> */}
               <p className="text-sm md:text-base lg:text-lg ">{slide.content}</p>
             </div>

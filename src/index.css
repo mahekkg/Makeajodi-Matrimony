@@ -152,13 +152,9 @@ ul.timeline li {
   grid-template-rows: min-content min-content min-content;
 }
 
-/* image */
-ul.timeline li .image {
-  height: 200px; /* Set the desired height */
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 8px;
+/* image --- timeline*/
+.timeline-img{
+  height: 200px;
 }
 
 /* title descr */

@@ -11,7 +11,9 @@ const Customers = () => {
 
       <ul className="timeline">
         <li style={{ '--accent-color': '#FBCA3E' }}>
-          <div className="image" style={{ backgroundImage: `url(${GR})` }}></div>
+          <div className=" flex justify-center timeline-img ">
+            <img src={GR} alt="couple" className=' rounded-2xl height-[20px] ' />
+          </div>
           <div className="title">
             <p>Gyanendra & Rabina</p>
           </div>
@@ -21,7 +23,9 @@ const Customers = () => {
         </li>
         {/* ---------------------------------------- */}
         <li style={{ '--accent-color': '#41516C' }}>
-          <div className="image" style={{ backgroundImage: `url(${BB})` }}></div>
+          <div className=" flex justify-center timeline-img ">
+            <img src={BB} alt="couple" className=' rounded-2xl height-[20px] ' />
+          </div>
           <div className="title">
             <p>Bharat & Barkha</p>
           </div>
@@ -31,7 +35,9 @@ const Customers = () => {
         </li>
         {/* ---------------------------------------- */}
         <li style={{ '--accent-color': '#41516C' }}>
-          <div className="image" style={{ backgroundImage: `url(${DN})` }}></div>
+        <div className=" flex justify-center timeline-img ">
+            <img src={DN} alt="couple" className=' rounded-2xl height-[20px] ' />
+          </div>
           <div className="title">
             <p>Deepak & Nisha</p>
           </div>
