@@ -49,15 +49,15 @@ const Carousel = () => {
     <div className="mx-auto max-w-screen-lg mt-8">
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index} className="relative custom-slide">
+          <div key={index} className="relative custom-slide ">
             <img
               src={slide.imageUrl}
               alt={`Slide ${index + 1}`}
-              className="w-full h-96 object-cover rounded-2xl"
+              className="w-full h-96 object-cover rounded-2xl  "
             />
-            <div className="absolute bottom-0 left-0 text-center text-white p-4 w-full gradient-overlay title rounded-b-lg  ">
+            <div className="absolute bottom-0 left-0 text-center text-white p-4 w-full title rounded-b-lg  ">
               {/* <h1 className="text-2xl font-semibold">{slide.title}</h1> */}
-              <p className="text-sm md:text-base lg:text-lg ">{slide.content}</p>
+              <p className="text-sm md:text-base lg:text-lg " style={{ textShadow: '0 3px 9px rgba(0, 0, 0, 5)' }}>{slide.content}</p>
             </div>
           </div>
 
