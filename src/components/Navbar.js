@@ -4,10 +4,10 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import Modal from 'react-modal';
 import Form from './Elements/Form';
-import logo from '../assests/logo.png'
+import logo from '../assests/logo.png';
 
 export default function Navbar() {
-    const navItem = ['About Us', 'Packages', 'Customers', 'FAQ', 'Contact', 'Centers']
+    const navItem = ['About Us', 'Packages', 'Customers', 'FAQ', 'Contact', 'Centers'];
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
 
@@ -27,21 +27,21 @@ export default function Navbar() {
             <div className='fixed w-full h-[70px] flex justify-between items-center px-6 bg-[#F9F4F4] z-50 mt-[35px]'>
 
                 <div className='mr-auto'>
-                    {/* Replace the text logo with the PNG logo */}
-                    <img src={logo} alt="Logo" className="h-[40px]" />
+                    {/* Wrap the img tag with Link */}
+                    <Link to="Home" spy={true} smooth={true} duration={1000}>
+                        <img src={logo} alt="Logo" className="h-[40px] cursor-pointer" />
+                    </Link>
                 </div>
 
                 <div className='text-xl font-normal hidden md:flex space-x-6 shadow-[#040c16] ml-auto'>
                     <ul className='flex space-x-6 '>
-                        {
-                            navItem.map((item, index) => (
-                                <li key={index} className='cursor-pointer'>
-                                    <Link to={item} spy={true} smooth={true} duration={500}>
-                                        {item}
-                                    </Link>
-                                </li>
-                            ))
-                        }
+                        {navItem.map((item, index) => (
+                            <li key={index} className='cursor-pointer'>
+                                <Link to={item} spy={true} smooth={true} duration={500}>
+                                    {item}
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
 
@@ -58,15 +58,13 @@ export default function Navbar() {
 
                 <div className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#F9F4F4] text-black flex flex-col justify-center items-center'}>
                     <ul>
-                        {
-                            navItem.map((item, index) => (
-                                <li key={index} className='py-6 text-2xl cursor-pointer'>
-                                    <Link onClick={handleClick} to={item} spy={true} smooth={true} duration={500}>
-                                        {item}
-                                    </Link>
-                                </li>
-                            ))
-                        }
+                        {navItem.map((item, index) => (
+                            <li key={index} className='py-6 text-2xl cursor-pointer'>
+                                <Link onClick={handleClick} to={item} spy={true} smooth={true} duration={500}>
+                                    {item}
+                                </Link>
+                            </li>
+                        ))}
 
                         {/* Register Now Button for Mobile */}
                         <li className='py-6 text-2xl'>

@@ -10,7 +10,7 @@ const Carousel = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 200,
     slidesToShow: 3,  // Show 3 images at a time
     slidesToScroll: 1,
     autoplay: true,

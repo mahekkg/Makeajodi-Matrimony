@@ -12,7 +12,7 @@ const Customers = () => {
       <ul className="timeline">
         <li style={{ '--accent-color': '#FBCA3E' }}>
           <div className=" flex justify-center timeline-img ">
-            <img src={GR} alt="couple" className=' rounded-2xl height-[20px] ' />
+            <img src={GR} alt="couple" className=' rounded-2xl height-[25px] ' />
           </div>
           <div className="title">
             <p>Gyanendra & Rabina</p>

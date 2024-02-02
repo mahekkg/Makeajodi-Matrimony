@@ -18,7 +18,7 @@ const Home = () => {
 
 
   return (
-    <section className="hero" style={{ backgroundImage: `url(${backgroundHome})` }}>
+    <section id='Home' className="hero" style={{ backgroundImage: `url(${backgroundHome})` }}>
       <div className='absolute top-0 w-full h-full p-10 mt-[50px] flex flex-col md:flex-row justify-center text-white  '>
 
         {/* Left Content */}

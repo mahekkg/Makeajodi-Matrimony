@@ -48,7 +48,7 @@ const FAQSection = () => {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className={`border rounded p-3 cursor-pointer ${
+                className={`border rounded p-3 cursor-pointer transition-all duration-300 ${
                   openIndex === index ? 'bg-[#a20405] text-white' : 'bg-white text-[#383838]'
                 }`}
                 onClick={() => handleToggle(index)}
@@ -60,7 +60,7 @@ const FAQSection = () => {
                 <div className="flex justify-between items-center">
                   <h3 className="text-lg font-semibold">{faq.question}</h3>
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns="http://www.w3.org/2000/svg" 
                     className={`h-6 w-6 transform ${openIndex === index ? 'rotate-180' : 'rotate-0'}`}
                     fill="none"
                     viewBox="0 0 24 24"
@@ -69,7 +69,7 @@ const FAQSection = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                   </svg>
                 </div>
-                {openIndex === index && <p className="text-white mt-2">{faq.answer}</p>}
+                {openIndex === index && <p className="text-white mt-2 transition-opacity duration-300">{faq.answer}</p>}
               </div>
             ))}
           </div>

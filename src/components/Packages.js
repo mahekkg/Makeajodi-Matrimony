@@ -52,11 +52,14 @@ const Packages = () => {
                 <li>2-3 profiles in a week</li>
                 <li>Upper Class Family </li>
                 <li>6 Months Validity</li>
+                <li>Full visible profiles</li>
+                <li>100% verified families</li>
+                <li>Boost your profile</li>
               </ul>
               <button
                 type='button'
                 onClick={openModal}
-                className='flex justify-between text-[#a20405] bg-[#f6e6e6] px-2 py-2 mt-10  rounded '
+                className='flex justify-between text-[#a20405] bg-[#f6e6e6] px-2 py-2 mb-8  rounded '
               >
                 Upgrade Now
               </button>

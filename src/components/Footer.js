@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, } from '@fortawesome/free-brands-svg-icons';
 import Modal from 'react-modal';
 import PrivacyPolicy from '../components/PrivacyPolicy'
 
@@ -41,12 +41,12 @@ const Footer = () => {
           <a href="https://www.instagram.com/makeajodi/" target="_blank" rel="noopener noreferrer" className='text-xl mr-4 p-2 cursor-pointer'>
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a href="//" target="_blank" rel="noopener noreferrer" className='text-xl mr-4 p-2 cursor-pointer'>
+          {/* <a href="//" target="_blank" rel="noopener noreferrer" className='text-xl mr-4 p-2 cursor-pointer'>
             <FontAwesomeIcon icon={faYoutube} />
           </a>
           <a href="//" target="_blank" rel="noopener noreferrer" className='text-xl mr-4 p-2 cursor-pointer'>
             <FontAwesomeIcon icon={faLinkedin} />
-          </a>
+          </a> */}
         </div>
 
         {/* Copyright Section */}
